@@ -31,9 +31,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Сборка пакетов
-        run: yarn build
-
       - name: Настройка git
         run: |
           git config --local user.name "GitHub Workflow"
